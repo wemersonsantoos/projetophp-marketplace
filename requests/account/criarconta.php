@@ -8,7 +8,7 @@ require 'vendor/autoload.php';
 use Moip\Moip;
 use Moip\Auth\OAuth;
 
-$access_token = '92a4a85e21604967b1e948a3b65032ec_v2';
+$access_token = '07f6f745d94449e58b440cda189a36a9_v2';
 $moip = new Moip(new OAuth($access_token), Moip::ENDPOINT_SANDBOX);
 
 $street = 'Rua de teste';
@@ -31,7 +31,7 @@ $account = $moip->accounts()
     ->setEmail((string)time().'@email.com')
     ->setIdentityDocument($identity_document, $issuer, $issue_date)
     ->setBirthDate('1988-12-30')
-    ->setTaxDocument('16262131000')
+    ->setTaxDocument('451.309.220-34')
     ->setType('MERCHANT')
     ->setPhone($area_code, $phone_number, $country_code)
     ->addAlternativePhone(11, 66448899, 55)
